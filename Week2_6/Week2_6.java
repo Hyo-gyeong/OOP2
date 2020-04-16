@@ -5,20 +5,23 @@ public class Week2_6 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
+		Phone[] info = new Phone[2];
 		
-		System.out.print("ÀÌ¸§, ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >> ");
+		System.out.print("ì´ë¦„, ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. >> ");
+		String name0 = sc.next();
+		String pn0 = sc.next();
+		
+		info[0] = new Phone(name0, pn0);
+		
+		System.out.println(info[0].getName() + "ì˜ ë²ˆí˜¸ëŠ” "+ info[0].getTel());
+		
+		System.out.print("ì´ë¦„, ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. >> ");
 		String name1 = sc.next();
 		String pn1 = sc.next();
 		
-		Phone info1 = new Phone(name1, pn1);
-		System.out.println(info1.getName() + "ÀÇ ¹øÈ£´Â "+ info1.getTel());
+		info[1] = new Phone(name1, pn1);
 		
-		System.out.print("ÀÌ¸§, ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >> ");
-		String name2 = sc.next();
-		String pn2 = sc.next();
-		
-		Phone info2 = new Phone(name2, pn2);
-		System.out.println(info2.getName() + "ÀÇ ¹øÈ£´Â "+ info2.getTel());
+		System.out.println(info[1].getName() + "ì˜ ë²ˆí˜¸ëŠ” "+ info[1].getTel());
 		
 		sc.close();
 		
