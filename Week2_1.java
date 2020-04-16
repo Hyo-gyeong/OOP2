@@ -9,22 +9,22 @@ public class Week2_1 {
 		int[] num = new int[5];
 		double sum = 0;
 		
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
-		for (int i = 0; i < 5; i++) {
+		System.out.print("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ");
+		for (int i : num) {
 			num[i] = sc.nextInt();
 			sum += num[i];		
 		}
 		
-		System.out.println("ÇÕÀº " + sum);
+		System.out.println("í•©ì€ " + sum);
 		
 		String[] name = new String[5];
 		
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ");
 		for (int i = 0; i < 5; i++)
 			name[i] = sc.next();
-		System.out.print("ÀÔ·ÂµÈ ÀÌ¸§Àº ");
-		for (int i = 0; i < 5; i++)
-			System.out.print(name[i] + " ");
+		System.out.print("ìž…ë ¥ëœ ì´ë¦„ì€ ");
+		for (String i : name)
+			System.out.print(i + " ");
 		
 		sc.close();
 	}
